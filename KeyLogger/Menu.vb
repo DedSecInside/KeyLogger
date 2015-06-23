@@ -43,6 +43,8 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If TextBox1.Text = My.Settings.USER And TextBox2.Text = My.Settings.PASSWORD Then
             Errorlbl.Text = "Login Succesful!"
+            controlpanel.Show()
+            Me.Hide()
         End If
     End Sub
 

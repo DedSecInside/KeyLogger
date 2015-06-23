@@ -1,5 +1,6 @@
 ﻿Public Class controlpanel
 
+
     Dim drag As Boolean
     Dim mousex As Integer
     Dim mousey As Integer
@@ -19,5 +20,11 @@
 
     Private Sub Form1_MouseUp(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Me.MouseUp
         drag = False
+    End Sub
+
+    
+    
+    Private Sub controlpanel_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Label1.Text = My.Settings.USER
     End Sub
 End Class

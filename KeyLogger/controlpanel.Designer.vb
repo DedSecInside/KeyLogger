@@ -25,6 +25,7 @@ Partial Class controlpanel
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(controlpanel))
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -51,12 +52,23 @@ Partial Class controlpanel
         Me.Label2.TabIndex = 12
         Me.Label2.Text = "V 1.0"
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.ForeColor = System.Drawing.Color.Coral
+        Me.Label1.Location = New System.Drawing.Point(44, 168)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(71, 13)
+        Me.Label1.TabIndex = 13
+        Me.Label1.Text = "USER NAME"
+        '
         'controlpanel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(736, 451)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.PictureBox4)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -69,4 +81,5 @@ Partial Class controlpanel
     End Sub
     Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Label1 As System.Windows.Forms.Label
 End Class
