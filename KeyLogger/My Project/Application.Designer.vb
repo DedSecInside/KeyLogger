@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.KeyLogger.Form1
+            Me.MainForm = Global.KeyLogger.Menu
         End Sub
     End Class
 End Namespace

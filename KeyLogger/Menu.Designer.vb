@@ -139,11 +139,11 @@ Partial Class Menu
         'Errorlbl
         '
         Me.Errorlbl.AutoSize = True
-        Me.Errorlbl.Location = New System.Drawing.Point(253, 377)
+        Me.Errorlbl.Font = New System.Drawing.Font("Kristen ITC", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.Errorlbl.Location = New System.Drawing.Point(222, 360)
         Me.Errorlbl.Name = "Errorlbl"
-        Me.Errorlbl.Size = New System.Drawing.Size(13, 13)
+        Me.Errorlbl.Size = New System.Drawing.Size(0, 16)
         Me.Errorlbl.TabIndex = 9
-        Me.Errorlbl.Text = "1"
         '
         'Menu
         '
