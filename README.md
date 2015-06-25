@@ -13,7 +13,7 @@
 - [ ] Adjustable time interval
 
 
-
+## Credits
 ------
 
 ![](http://i.imgur.com/PtaBPqJ.jpg)
