@@ -38,6 +38,8 @@ Partial Class controlpanel
         Me.Label6 = New System.Windows.Forms.Label()
         Me.TrackBar1 = New System.Windows.Forms.TrackBar()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Label8 = New System.Windows.Forms.Label()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -189,6 +191,25 @@ Partial Class controlpanel
         Me.Label7.TabIndex = 21
         Me.Label7.Text = " E-mail"
         '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(129, 533)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.TabIndex = 23
+        Me.Button3.Text = "Save"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.ForeColor = System.Drawing.Color.Coral
+        Me.Label8.Location = New System.Drawing.Point(695, 407)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(39, 13)
+        Me.Label8.TabIndex = 24
+        Me.Label8.Text = "Label8"
+        '
         'controlpanel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -196,6 +217,8 @@ Partial Class controlpanel
         Me.BackColor = System.Drawing.Color.Black
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(990, 679)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.TrackBar1)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label7)
@@ -237,4 +260,6 @@ Partial Class controlpanel
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents TrackBar1 As System.Windows.Forms.TrackBar
     Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents Label8 As System.Windows.Forms.Label
 End Class

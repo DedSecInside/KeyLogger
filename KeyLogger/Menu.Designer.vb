@@ -47,7 +47,7 @@ Partial Class Menu
         Me.Button1.BackColor = System.Drawing.Color.Transparent
         Me.Button1.Font = New System.Drawing.Font("Kristen ITC", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.Black
-        Me.Button1.Location = New System.Drawing.Point(272, 303)
+        Me.Button1.Location = New System.Drawing.Point(272, 277)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(91, 31)
         Me.Button1.TabIndex = 4
@@ -74,7 +74,7 @@ Partial Class Menu
         Me.Button2.BackColor = System.Drawing.Color.Transparent
         Me.Button2.Font = New System.Drawing.Font("Kristen ITC", 8.25!, System.Drawing.FontStyle.Bold)
         Me.Button2.ForeColor = System.Drawing.Color.Black
-        Me.Button2.Location = New System.Drawing.Point(386, 303)
+        Me.Button2.Location = New System.Drawing.Point(386, 277)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(91, 31)
         Me.Button2.TabIndex = 7
@@ -108,7 +108,7 @@ Partial Class Menu
         Me.Errorlbl.AutoSize = True
         Me.Errorlbl.BackColor = System.Drawing.Color.White
         Me.Errorlbl.Font = New System.Drawing.Font("Kristen ITC", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.Errorlbl.Location = New System.Drawing.Point(263, 322)
+        Me.Errorlbl.Location = New System.Drawing.Point(263, 321)
         Me.Errorlbl.Name = "Errorlbl"
         Me.Errorlbl.Size = New System.Drawing.Size(0, 16)
         Me.Errorlbl.TabIndex = 9

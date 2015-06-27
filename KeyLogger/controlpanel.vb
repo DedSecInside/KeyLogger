@@ -62,4 +62,22 @@
     Private Sub TrackBar1_Scroll(sender As Object, e As EventArgs) Handles TrackBar1.Scroll
         TrackBar1.Value = 0
     End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        If (TextBox2.Text = vbNullString) Or (TextBox3.Text = vbNullString) Then
+        ElseIf (Not (TextBox2.Text = vbNullString And Not TextBox3.Text = vbNullString)) Then
+            My.Settings.PASSWORD = TextBox2.Text
+            My.Settings.mail = TextBox3.Text
+            My.Settings.Save()
+            Label8.Text = "Settings has been saved!"
+        ElseIf (Not (TextBox2.Text = vbNullString) And (TextBox3.Text = vbNullString)) Then
+            My.Settings.PASSWORD = TextBox2.Text
+            My.Settings.Save()
+            Label8.Text = "Settings has been saved!"
+        Else
+            My.Settings.mail = TextBox3.Text
+            My.Settings.Save()
+            Label8.Text = "Settings has been saved!"
+        End If
+    End Sub
 End Class
