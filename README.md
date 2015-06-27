@@ -13,8 +13,9 @@
 - [ ] Adjustable time interval
 
 
-
+## Credits
 ------
-
+###  http://thepsnappz.me [THE PSN AppZ]
+### http://chicago-ctos.com/ [Blume]
 ![](http://i.imgur.com/PtaBPqJ.jpg)
 ![](http://i.imgur.com/MEqEABE.jpg)
