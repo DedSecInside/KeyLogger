@@ -18,7 +18,7 @@ Latest Version :[Download]( https://github.com/PSNAppz/KeyLogger/releases/tag/v1
 
 ## Credits
 ------
-###  http://thepsnappz.me [THE PSN AppZ]
-### http://chicago-ctos.com/ [Blume]
+###  [THE PSN AppZ](http://thepsnappz.me )
+###  [Blume] (http://chicago-ctos.com/)
 ![](http://i.imgur.com/PtaBPqJ.jpg)
 ![](http://i.imgur.com/MEqEABE.jpg)
