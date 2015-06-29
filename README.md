@@ -2,7 +2,10 @@
 ![](http://i.imgur.com/60LYyEh.jpg)
 ## The Key Logger with a Beautiful UI
 
+### Download
+-------------
 
+Latest Version Download :[V1.1a]( https://github.com/PSNAppz/KeyLogger/releases/tag/v1.1a-beta)
 
 ### Features 
 --------------------
