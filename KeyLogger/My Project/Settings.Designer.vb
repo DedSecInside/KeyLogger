@@ -101,6 +101,30 @@ Namespace My
                 Me("mail") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property mailpass() As String
+            Get
+                Return CType(Me("mailpass"),String)
+            End Get
+            Set
+                Me("mailpass") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property time() As Integer
+            Get
+                Return CType(Me("time"),Integer)
+            End Get
+            Set
+                Me("time") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

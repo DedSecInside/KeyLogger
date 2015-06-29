@@ -40,6 +40,9 @@ Partial Class controlpanel
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.Label10 = New System.Windows.Forms.Label()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -111,7 +114,7 @@ Partial Class controlpanel
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Black
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 210)
+        Me.PictureBox1.Location = New System.Drawing.Point(13, 213)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(953, 457)
         Me.PictureBox1.TabIndex = 18
@@ -128,19 +131,20 @@ Partial Class controlpanel
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(129, 401)
+        Me.TextBox2.Location = New System.Drawing.Point(129, 437)
         Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBox2.Size = New System.Drawing.Size(178, 20)
         Me.TextBox2.TabIndex = 20
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("MS Reference Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.LawnGreen
-        Me.Label3.Location = New System.Drawing.Point(441, 296)
+        Me.Label3.Font = New System.Drawing.Font("Kristen ITC", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.LimeGreen
+        Me.Label3.Location = New System.Drawing.Point(454, 306)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(118, 29)
+        Me.Label3.Size = New System.Drawing.Size(106, 29)
         Me.Label3.TabIndex = 21
         Me.Label3.Text = "Settings"
         '
@@ -157,7 +161,7 @@ Partial Class controlpanel
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(129, 441)
+        Me.TextBox3.Location = New System.Drawing.Point(129, 398)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(178, 20)
         Me.TextBox3.TabIndex = 20
@@ -167,7 +171,7 @@ Partial Class controlpanel
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
         Me.Label6.ForeColor = System.Drawing.Color.LawnGreen
-        Me.Label6.Location = New System.Drawing.Point(24, 402)
+        Me.Label6.Location = New System.Drawing.Point(24, 437)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(70, 16)
         Me.Label6.TabIndex = 21
@@ -185,7 +189,7 @@ Partial Class controlpanel
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
         Me.Label7.ForeColor = System.Drawing.Color.LawnGreen
-        Me.Label7.Location = New System.Drawing.Point(24, 441)
+        Me.Label7.Location = New System.Drawing.Point(22, 398)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(53, 16)
         Me.Label7.TabIndex = 21
@@ -203,12 +207,42 @@ Partial Class controlpanel
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.ForeColor = System.Drawing.Color.Coral
-        Me.Label8.Location = New System.Drawing.Point(695, 407)
+        Me.Label8.ForeColor = System.Drawing.Color.LimeGreen
+        Me.Label8.Location = New System.Drawing.Point(126, 572)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(39, 13)
+        Me.Label8.Size = New System.Drawing.Size(0, 13)
         Me.Label8.TabIndex = 24
-        Me.Label8.Text = "Label8"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Kristen ITC", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.Label9.ForeColor = System.Drawing.Color.LimeGreen
+        Me.Label9.Location = New System.Drawing.Point(609, 644)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(341, 16)
+        Me.Label9.TabIndex = 25
+        Me.Label9.Text = "Please Set your Email and Password to Send the logs"
+        Me.Label9.Visible = False
+        '
+        'TextBox4
+        '
+        Me.TextBox4.Location = New System.Drawing.Point(417, 482)
+        Me.TextBox4.Multiline = True
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.ReadOnly = True
+        Me.TextBox4.Size = New System.Drawing.Size(18, 26)
+        Me.TextBox4.TabIndex = 26
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.ForeColor = System.Drawing.Color.CornflowerBlue
+        Me.Label10.Location = New System.Drawing.Point(441, 495)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(27, 13)
+        Me.Label10.TabIndex = 27
+        Me.Label10.Text = "MIN"
         '
         'controlpanel
         '
@@ -217,6 +251,9 @@ Partial Class controlpanel
         Me.BackColor = System.Drawing.Color.Black
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(990, 679)
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.TrackBar1)
@@ -262,4 +299,7 @@ Partial Class controlpanel
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents Label10 As System.Windows.Forms.Label
 End Class

