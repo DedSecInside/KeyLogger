@@ -5,7 +5,7 @@
 ### Download
 -------------
 
-Latest Version Download :[V1.1a]( https://github.com/PSNAppz/KeyLogger/releases/tag/v1.1a-beta)
+Latest Version :[Download]( https://github.com/PSNAppz/KeyLogger/releases/tag/v1.1a-beta)
 
 ### Features 
 --------------------
