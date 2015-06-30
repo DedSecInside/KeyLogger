@@ -23,33 +23,34 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.tmrEmail = New System.Windows.Forms.Timer(Me.components)
-        Me.txtLogs = New System.Windows.Forms.TextBox()
-        Me.tmrKeys = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
         '
-        'tmrEmail
+        'Timer2
         '
-        Me.tmrEmail.Enabled = True
-        Me.tmrEmail.Interval = 60000
+        Me.Timer2.Enabled = True
+        Me.Timer2.Interval = 30000
         '
-        'txtLogs
+        'TextBox1
         '
-        Me.txtLogs.Location = New System.Drawing.Point(12, 12)
-        Me.txtLogs.Multiline = True
-        Me.txtLogs.Name = "txtLogs"
-        Me.txtLogs.Size = New System.Drawing.Size(733, 357)
-        Me.txtLogs.TabIndex = 1
-        Me.txtLogs.Visible = False
+        Me.TextBox1.Location = New System.Drawing.Point(12, 12)
+        Me.TextBox1.Multiline = True
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(733, 357)
+        Me.TextBox1.TabIndex = 1
+        Me.TextBox1.Visible = False
         '
-        'tmrKeys
+        'Timer1
         '
+        Me.Timer1.Interval = 20
         '
         'Form1
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.ClientSize = New System.Drawing.Size(761, 378)
-        Me.Controls.Add(Me.txtLogs)
+        Me.Controls.Add(Me.TextBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.MinimizeBox = False
         Me.Name = "Form1"
@@ -59,8 +60,8 @@ Partial Class Form1
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents tmrEmail As System.Windows.Forms.Timer
-    Friend WithEvents txtLogs As System.Windows.Forms.TextBox
-    Friend WithEvents tmrKeys As System.Windows.Forms.Timer
+    Friend WithEvents Timer2 As System.Windows.Forms.Timer
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents Timer1 As System.Windows.Forms.Timer
 
 End Class

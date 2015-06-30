@@ -95,7 +95,7 @@ Partial Class controlpanel
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(19, 220)
+        Me.Button1.Location = New System.Drawing.Point(632, 409)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(92, 35)
         Me.Button1.TabIndex = 17
@@ -104,7 +104,7 @@ Partial Class controlpanel
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(19, 261)
+        Me.Button2.Location = New System.Drawing.Point(858, 409)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(92, 35)
         Me.Button2.TabIndex = 17
@@ -122,16 +122,16 @@ Partial Class controlpanel
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(117, 220)
+        Me.TextBox1.Location = New System.Drawing.Point(632, 220)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(318, 76)
+        Me.TextBox1.Size = New System.Drawing.Size(318, 183)
         Me.TextBox1.TabIndex = 19
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(129, 437)
+        Me.TextBox2.Location = New System.Drawing.Point(129, 372)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBox2.Size = New System.Drawing.Size(178, 20)
@@ -140,11 +140,11 @@ Partial Class controlpanel
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Kristen ITC", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.LimeGreen
-        Me.Label3.Location = New System.Drawing.Point(454, 306)
+        Me.Label3.Font = New System.Drawing.Font("OCR A Std", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.Location = New System.Drawing.Point(104, 230)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(106, 29)
+        Me.Label3.Size = New System.Drawing.Size(190, 31)
         Me.Label3.TabIndex = 21
         Me.Label3.Text = "Settings"
         '
@@ -153,7 +153,7 @@ Partial Class controlpanel
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.LawnGreen
-        Me.Label4.Location = New System.Drawing.Point(22, 482)
+        Me.Label4.Location = New System.Drawing.Point(22, 417)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(89, 16)
         Me.Label4.TabIndex = 21
@@ -161,7 +161,7 @@ Partial Class controlpanel
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(129, 398)
+        Me.TextBox3.Location = New System.Drawing.Point(129, 333)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(178, 20)
         Me.TextBox3.TabIndex = 20
@@ -171,7 +171,7 @@ Partial Class controlpanel
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
         Me.Label6.ForeColor = System.Drawing.Color.LawnGreen
-        Me.Label6.Location = New System.Drawing.Point(24, 437)
+        Me.Label6.Location = New System.Drawing.Point(24, 372)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(70, 16)
         Me.Label6.TabIndex = 21
@@ -179,7 +179,7 @@ Partial Class controlpanel
         '
         'TrackBar1
         '
-        Me.TrackBar1.Location = New System.Drawing.Point(129, 482)
+        Me.TrackBar1.Location = New System.Drawing.Point(129, 417)
         Me.TrackBar1.Name = "TrackBar1"
         Me.TrackBar1.Size = New System.Drawing.Size(282, 45)
         Me.TrackBar1.TabIndex = 22
@@ -189,7 +189,7 @@ Partial Class controlpanel
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
         Me.Label7.ForeColor = System.Drawing.Color.LawnGreen
-        Me.Label7.Location = New System.Drawing.Point(22, 398)
+        Me.Label7.Location = New System.Drawing.Point(22, 333)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(53, 16)
         Me.Label7.TabIndex = 21
@@ -197,7 +197,7 @@ Partial Class controlpanel
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(129, 533)
+        Me.Button3.Location = New System.Drawing.Point(129, 468)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 23
@@ -208,7 +208,7 @@ Partial Class controlpanel
         '
         Me.Label8.AutoSize = True
         Me.Label8.ForeColor = System.Drawing.Color.LimeGreen
-        Me.Label8.Location = New System.Drawing.Point(126, 572)
+        Me.Label8.Location = New System.Drawing.Point(126, 515)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(0, 13)
         Me.Label8.TabIndex = 24
@@ -220,14 +220,14 @@ Partial Class controlpanel
         Me.Label9.ForeColor = System.Drawing.Color.LimeGreen
         Me.Label9.Location = New System.Drawing.Point(609, 644)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(341, 16)
+        Me.Label9.Size = New System.Drawing.Size(351, 16)
         Me.Label9.TabIndex = 25
-        Me.Label9.Text = "Please Set your Email and Password to Send the logs"
+        Me.Label9.Text = "* Please Set your Email and Password to Send the logs"
         Me.Label9.Visible = False
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(417, 482)
+        Me.TextBox4.Location = New System.Drawing.Point(417, 417)
         Me.TextBox4.Multiline = True
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.ReadOnly = True
@@ -238,7 +238,7 @@ Partial Class controlpanel
         '
         Me.Label10.AutoSize = True
         Me.Label10.ForeColor = System.Drawing.Color.CornflowerBlue
-        Me.Label10.Location = New System.Drawing.Point(441, 495)
+        Me.Label10.Location = New System.Drawing.Point(441, 430)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(27, 13)
         Me.Label10.TabIndex = 27
