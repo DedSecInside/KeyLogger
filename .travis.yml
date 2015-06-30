@@ -2,5 +2,5 @@ language: csharp
 solution: KeyLogger.sln
 
 install:
-  - nuget restore QuantConnect.Lean.sln
+  - nuget restore KeyLogger.sln
   - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
