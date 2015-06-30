@@ -25,6 +25,7 @@
     
     
     Private Sub controlpanel_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         Label1.Text = "Welcome, " + My.Settings.USER
         If My.Settings.mailpass = vbNullString Then
             Label9.Visible = True
@@ -83,4 +84,5 @@
     End Sub
 
    
+    
 End Class
