@@ -36,7 +36,6 @@ Partial Class Menu
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.Button3 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -188,16 +187,6 @@ Partial Class Menu
         Me.PictureBox4.TabIndex = 10
         Me.PictureBox4.TabStop = False
         '
-        'Button3
-        '
-        Me.Button3.Font = New System.Drawing.Font("Kristen ITC", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.Button3.Location = New System.Drawing.Point(333, 314)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(81, 30)
-        Me.Button3.TabIndex = 13
-        Me.Button3.Text = "Forgot All"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
         'Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -205,7 +194,6 @@ Partial Class Menu
         Me.BackColor = System.Drawing.Color.Black
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(752, 490)
-        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox7)
@@ -245,5 +233,4 @@ Partial Class Menu
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
-    Friend WithEvents Button3 As System.Windows.Forms.Button
 End Class
