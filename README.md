@@ -1,4 +1,4 @@
-# DEDSEC Key Logger v 1.0 (BETA)
+# DEDSEC Key Logger v 1.0 
 ![](http://i.imgur.com/60LYyEh.jpg)
 ## The KeyLogger with a Beautiful UI
 
