@@ -1,7 +1,7 @@
 # DEDSEC Key Logger v 1.1
 ![](http://i.imgur.com/60LYyEh.jpg)
 ## The KeyLogger with a Beautiful UI
-
+![](http://www.repostatus.org/badges/0.1.0/active.svg)
 ### Download
 -------------
 
