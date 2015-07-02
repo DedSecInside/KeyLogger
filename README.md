@@ -1,11 +1,11 @@
-# DEDSEC Key Logger v 1.0 
+# DEDSEC Key Logger v 1.1
 ![](http://i.imgur.com/60LYyEh.jpg)
 ## The KeyLogger with a Beautiful UI
 
 ### Download
 -------------
 
-Latest Version :[Download]( https://github.com/PSNAppz/KeyLogger/releases/tag/V1.0)
+Latest Version :[Download]( https://github.com/PSNAppz/KeyLogger/releases/tag/V1.1)
 
 ### Features 
 --------------------
