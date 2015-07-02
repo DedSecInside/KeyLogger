@@ -1,6 +1,9 @@
 language: csharp
 solution: KeyLogger.sln
 
+script:
+      /p:VbcToolExe=vbnc.exe
+
 install:
   - nuget restore KeyLogger.sln
   - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
