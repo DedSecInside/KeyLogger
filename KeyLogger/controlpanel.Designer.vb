@@ -43,6 +43,7 @@ Partial Class controlpanel
         Me.Label9 = New System.Windows.Forms.Label()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -197,7 +198,7 @@ Partial Class controlpanel
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(129, 468)
+        Me.Button3.Location = New System.Drawing.Point(129, 498)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 23
@@ -208,7 +209,7 @@ Partial Class controlpanel
         '
         Me.Label8.AutoSize = True
         Me.Label8.ForeColor = System.Drawing.Color.LimeGreen
-        Me.Label8.Location = New System.Drawing.Point(126, 515)
+        Me.Label8.Location = New System.Drawing.Point(126, 559)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(0, 13)
         Me.Label8.TabIndex = 24
@@ -244,6 +245,17 @@ Partial Class controlpanel
         Me.Label10.TabIndex = 27
         Me.Label10.Text = "MIN"
         '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.ForeColor = System.Drawing.Color.LawnGreen
+        Me.CheckBox1.Location = New System.Drawing.Point(129, 469)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(98, 17)
+        Me.CheckBox1.TabIndex = 28
+        Me.CheckBox1.Text = "Run on Startup"
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
         'controlpanel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -251,6 +263,7 @@ Partial Class controlpanel
         Me.BackColor = System.Drawing.Color.Black
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(990, 679)
+        Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.Label9)
@@ -302,4 +315,5 @@ Partial Class controlpanel
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
     Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
 End Class

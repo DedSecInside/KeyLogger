@@ -46,7 +46,7 @@
             If TextBox1.Text = My.Settings.USER And TextBox2.Text = My.Settings.PASSWORD Then
                 Errorlbl.Text = "Login Succesful!"
                 controlpanel.Show()
-                Me.Hide()
+                Me.Close()
             End If
         End If
     End Sub

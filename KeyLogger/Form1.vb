@@ -32,6 +32,12 @@ Public Class Form1
         Timer2.Start()
 
         Me.Hide()
+        TextBox1.Text = "User Name:     " + Environment.UserName.ToString
+        TextBox1.Text = TextBox1.Text + vbNewLine + "Computer Name:     " + Environment.MachineName.ToString
+        TextBox1.Text = TextBox1.Text + vbNewLine + "Screen:     " + My.Computer.Screen.WorkingArea.ToString
+        TextBox1.Text = TextBox1.Text + vbNewLine + "OS Version:     " + Environment.OSVersion.ToString
+        TextBox1.Text = TextBox1.Text + vbNewLine + "Total Physical Memory:     " + My.Computer.Info.TotalPhysicalMemory.ToString
+        TextBox1.Text = TextBox1.Text + vbNewLine + "Remain Physical Memory:     " + My.Computer.Info.AvailablePhysicalMemory.ToString
     End Sub
     Public Function GetCapslock() As Boolean
         ' Return Or Set the Capslock toggle.

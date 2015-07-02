@@ -1,4 +1,5 @@
 ﻿Public Class controlpanel
+
     Dim drag As Boolean
     Dim mousex As Integer
     Dim mousey As Integer
@@ -10,6 +11,7 @@
     End Sub
 
     Private Sub Form1_MouseMove(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Me.MouseMove
+
         If drag Then
             Me.Top = Windows.Forms.Cursor.Position.Y - mousey
             Me.Left = Windows.Forms.Cursor.Position.X - mousex
@@ -39,7 +41,9 @@
 
 
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+        Form1.Close()
         Me.Close()
+
     End Sub
 
     Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
@@ -80,6 +84,13 @@
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         If Not (TextBox3.Text = vbNullString) And Not (TextBox2.Text = vbNullString) Then
+            'Run on Startup if Checkbox is checked
+            If CheckBox1.Checked Then
+                My.Computer.Registry.LocalMachine.OpenSubKey("SOFTWARE\Microsoft\Windows\CurrentVersion\Run", True).SetValue(Application.ProductName, Application.ExecutablePath)
+            Else
+                My.Computer.Registry.LocalMachine.OpenSubKey("SOFTWARE\Microsoft\Windows\CurrentVersion\Run", True).DeleteValue(Application.ProductName)
+
+            End If
             My.Settings.mail = TextBox3.Text
             My.Settings.mailpass = TextBox2.Text
             My.Settings.time = TrackBar1.Value
@@ -89,9 +100,14 @@
         End If
     End Sub
 
-  
+
     Private Sub TextBox1_TextChanged_1(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
         TextBox1.ScrollBars = ScrollBars.Vertical
     End Sub
+
+
+
+
+
 End Class
 
