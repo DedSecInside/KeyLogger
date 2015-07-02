@@ -1,4 +1,4 @@
-# DEDSEC Key Logger v 1.0 (BETA)
+# DEDSEC Key Logger v 1.0 
 ![](http://i.imgur.com/60LYyEh.jpg)
 ## The KeyLogger with a Beautiful UI
 
@@ -14,7 +14,7 @@ Latest Version :[Download]( https://github.com/PSNAppz/KeyLogger/releases/tag/V1
 - [x] User Account ( Currently limited to 1/PC)
 - [x] Controls And Management
 - [x] Adjustable time interval
-- [x] Displays System Info 
+- [x] Sends System Info of Victim 
 
 ### Screen Shots
 -------------------------
