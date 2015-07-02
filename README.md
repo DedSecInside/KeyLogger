@@ -15,6 +15,10 @@ Latest Version :[Download]( https://github.com/PSNAppz/KeyLogger/releases/tag/V1
 - [x] Controls And Management
 - [x] Adjustable time interval
 - [x] Sends System Info of Victim 
+- [x] Run on Startup (optional)
+
+
+#### REQUEST YOUR PERSONAL KEYLOGGER HERE : [DedSec](http://thepsnappz.me/request.html )
 
 ### Screen Shots
 -------------------------
