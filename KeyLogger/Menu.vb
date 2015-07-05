@@ -46,7 +46,8 @@
             If TextBox1.Text = My.Settings.USER And TextBox2.Text = My.Settings.PASSWORD Then
                 Errorlbl.Text = "Login Succesful!"
                 controlpanel.Show()
-                Me.Close()
+
+                Me.Hide()
             End If
         End If
     End Sub
@@ -55,7 +56,10 @@
 
     End Sub
     Private Sub Menu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        If My.Settings.log = 1 Then
+            Form1.Show()
+            Form1.Hide()
+        End If
     End Sub
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click

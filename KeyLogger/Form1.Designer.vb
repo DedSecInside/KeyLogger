@@ -54,6 +54,7 @@ Partial Class Form1
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.MinimizeBox = False
         Me.Name = "Form1"
+        Me.Opacity = 0.0R
         Me.Text = "Form1"
         Me.TransparencyKey = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(100, Byte), Integer))
         Me.ResumeLayout(False)

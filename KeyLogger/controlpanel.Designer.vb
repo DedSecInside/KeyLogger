@@ -251,9 +251,9 @@ Partial Class controlpanel
         Me.CheckBox1.ForeColor = System.Drawing.Color.LawnGreen
         Me.CheckBox1.Location = New System.Drawing.Point(129, 469)
         Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(98, 17)
+        Me.CheckBox1.Size = New System.Drawing.Size(119, 17)
         Me.CheckBox1.TabIndex = 28
-        Me.CheckBox1.Text = "Run on Startup"
+        Me.CheckBox1.Text = "Run Log on Startup"
         Me.CheckBox1.UseVisualStyleBackColor = True
         '
         'controlpanel

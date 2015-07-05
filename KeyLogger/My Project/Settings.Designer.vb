@@ -125,6 +125,18 @@ Namespace My
                 Me("time") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property log() As Integer
+            Get
+                Return CType(Me("log"),Integer)
+            End Get
+            Set
+                Me("log") = value
+            End Set
+        End Property
     End Class
 End Namespace
 
